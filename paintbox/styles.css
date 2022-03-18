@@ -1,0 +1,82 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0 20px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 15px;
+  color: lightslategray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 150px;
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul:first-child {
+  display: flex;
+}
+
+nav ul:first-child li {
+  margin-right: 20px;
+}
+
+section {
+  display: flex;
+}
+
+section img {
+  width: 50%;
+}
+
+section div {
+  background-color: #f3ede8;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+section div h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+section div h2 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+i {
+  font-style: italic;
+}
+
+section div a {
+  border: 1px solid black;
+  padding: 10px;
+}
