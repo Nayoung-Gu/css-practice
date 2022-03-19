@@ -24,6 +24,7 @@ a {
 
 header {
   position: fixed;
+  z-index: 1;
   /* position: relative;
   top: 10; */
   width: 95%;
@@ -54,7 +55,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin: 150px 0 100px 0;
 }
 
 section {
@@ -116,4 +117,39 @@ section div a {
 .section__link a:hover {
   color: white;
   background-color: #2e2f2d;
+}
+
+footer {
+  text-transform: uppercase;
+  background-color: #f7f2ef;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  text-align: center;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.footer__column__title {
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+
+footer span {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer .column1,
+footer .column2 {
+  border-right: 1px solid black;
 }
