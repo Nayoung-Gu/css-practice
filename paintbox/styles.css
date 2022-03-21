@@ -60,6 +60,8 @@ main {
 
 section {
   display: flex;
+  margin-bottom: 80px;
+  width: 80%;
 }
 
 section img {
@@ -117,6 +119,33 @@ section div a {
 .section__link a:hover {
   color: white;
   background-color: #2e2f2d;
+}
+
+.section__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 0.8fr);
+  flex-wrap: wrap;
+}
+
+.section__gallery div {
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+}
+
+.section__gallery img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s linear;
+  cursor: pointer;
+  padding: 0;
+}
+
+.section__gallery img:hover {
+  opacity: 0.5;
 }
 
 footer {
